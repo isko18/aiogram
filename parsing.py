@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 count_news = 0
-with open('news.txt', 'w', encoding='utf=8') as file:
+with open('news.txt', 'rb', encoding='utf=8') as file:
     for page in range(1, 11):
         url = f'https://24.kg/page_{page}'
         response = requests.get(url=url)
